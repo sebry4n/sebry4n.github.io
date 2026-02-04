@@ -1,34 +1,25 @@
-# ParticleGround-Portfolio
+## Usage
 
-A particle-theme template as a landing page for your portfolio.
+* This template uses tailwind css every tailwind class are prefixed with `tw-`, to help differentiate
+  between tailwind classes and other classes  
 
-> [Demo](https://landing-page--itsron717.repl.co/)
+During development add the following to head tag
 
-<img src="particle_demo/particle_demo.png"/>
+```html
+<link rel="stylesheet" href="tailwind-runtime.css"><!--replace with path to your tailwind runtime-->
+```
+During production use
 
-# Using the Template
+```html
+<link rel="stylesheet" href="tailwind-build.css"><!--replace with path to your tailwind build-->
+```
 
-  - Fork and Clone the repository
+To start Tailwind during development use
+```html
+npm run start:tailwind
+```
 
-    ```
-    $ git clone https://github.com/itsron717/ParticleGround-Portfolio.git
-    ```
- 
-  - Go inside the main repository
-  
-    ```
-    $ cd ParticleGround-Portfolio
-    ```
-    
-  - Modify `index.html` to change the names and links to point at your pages.
-  
-  - Upload your resume in the place of `deedy.pdf` (Or One can use the famous deedy template and build on that)
-   
-# Particle Feature
-
-The particle feature was obtained with the help of this [particleground](https://github.com/jnicol/particleground). The changes in the particles such as speed, drift, colour, direction, density, etc. can be modified in `demo.js`. Refer to the above link for more details.
-
-
-# References and Inspiration
-
-This template is a minimal form of the [Particle Jekyll Template](https://github.com/nrandecker/particle).
+To create a build file use
+```html
+npm run build:tailwind
+```
